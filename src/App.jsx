@@ -71,9 +71,6 @@ function App() {
 							<br />
 							¡Incluye muchas variables y configuraciones disponibles!
 						</p>
-						<Button light as="a" href="#backups" auto>
-							Ir a backups
-						</Button>
 					</div>
 					<img src={welcome} alt="masternico welcome" width="450px" />
 				</div>
@@ -87,9 +84,6 @@ function App() {
 							<br />
 							¡Tiene 4 opciones dentro del sistema que te puede encantar!
 						</p>
-						<Button light as="a" href="#menu-roles">
-							Ir a roles de menú
-						</Button>
 					</div>
 					<img src={backup} alt="masternico backup" width="450px" />
 				</div>
@@ -103,9 +97,6 @@ function App() {
 							<br />
 							Puedes crear mensajes infinitos con hasta 25 roles por mensaje
 						</p>
-						<Button light as="a" href="#tickets">
-							Ir a tickets
-						</Button>
 					</div>
 					<img src={roles} alt="masternico reaction-roles" width="450px" />
 				</div>
@@ -119,9 +110,6 @@ function App() {
 							<br />
 							¡Y puedes poner hasta 25 opciones de tickets!!
 						</p>
-						<Button light as="a" href="#sorteos">
-							Ir a sorteos
-						</Button>
 					</div>
 					<img src={tickets} alt="masternico tickets" width="450px" />
 				</div>
@@ -135,9 +123,6 @@ function App() {
 							<br />
 							¡Puedes crear sorteos y tienes varias opciones de personalizacion!
 						</p>
-						<Button light as="a" href="#economia">
-							Ir a economia
-						</Button>
 					</div>
 					<img src={sorteo} alt="masternico sorteos" width="450px" />
 				</div>
@@ -153,9 +138,6 @@ function App() {
 							<br />
 							¡Y lo mejor tiene una tienda personalizable y puedes dar roles por item!
 						</p>
-						<Button light as="a" href="#starboard">
-							Ir a starboard
-						</Button>
 					</div>
 					<img src={economia} alt="masternico economia" width="450px" />
 				</div>
@@ -169,9 +151,6 @@ function App() {
 							<br />
 							¡Es un sistema simple pero funcional para todo servidor!
 						</p>
-						<Button light as="a" href="#captcha">
-							Ir a captcha
-						</Button>
 					</div>
 					<img src={starboard} alt="masternico starboard" width="450px" />
 				</div>

@@ -10,31 +10,32 @@ import { Command } from './pages/Command';
 import './styles/navbar.css';
 import './styles/styles.css';
 
+const theme = createTheme({
+	type: 'dark',
+	theme: {
+		colors: {
+			warning: '#e45233',
+			warningLight: '#e4523333',
+			warningLightContrast: '#ff7639',
+			warningLightHover: '#e4523355',
+			code: '#e45233',
+			codeLight: '#e4523322',
+			link: '#e45233'
+		}
+	}
+});
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<React.StrictMode>
-		<BrowserRouter>
-			<NextUIProvider
-				theme={createTheme({
-					type: 'dark',
-					theme: {
-						colors: {
-							warning: '#e45233',
-							warningLight: '#e4523333',
-							warningLightContrast: '#ff7639',
-							warningLightHover: '#e4523355',
-							code: '#e45233',
-							codeLight: '#e4523322'
-						}
-					}
-				})}
-			>
+		<NextUIProvider theme={theme}>
+			<BrowserRouter>
 				<Navbar />
 				<Routes>
 					<Route path="/" element={<App />} />
 					<Route path="/commands" element={<Command />} />
 				</Routes>
-			</NextUIProvider>
-		</BrowserRouter>
+			</BrowserRouter>
+		</NextUIProvider>
 	</React.StrictMode>
 );

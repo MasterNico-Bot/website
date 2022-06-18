@@ -136,7 +136,6 @@ const commands = [
 	{
 		name: '🤫 Confesiones',
 		description: 'Permite que los miembros cuenten sus secretos...',
-		warn: 'Warn message.',
 		commands: [
 			{
 				name: '/canal-confesiones',
@@ -165,7 +164,6 @@ const commands = [
 	{
 		name: '📬 Sugerencias',
 		description: 'Permite que los miembros de tu servidor puedan enviar sugerencias.',
-		warn: 'Warn message.',
 		commands: [
 			{
 				name: '/canal-sugerencias',
