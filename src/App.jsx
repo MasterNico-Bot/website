@@ -39,7 +39,9 @@ function App() {
 								Ver características
 							</Button>
 							<Button as="span" auto flat color="warning">
-								<Link to="/commands">Comandos</Link>
+								<Link className="link" to="/commands">
+									Comandos
+								</Link>
 							</Button>
 						</div>
 
@@ -49,13 +51,14 @@ function App() {
 								color="warning"
 								as="a"
 								className="inviteButton"
+								flat
 							>
 								<FontAwesome icon="fas fa-arrow-up-right-from-square" /> Invitar bot
 							</Button>
 							<Button as="a" href="#welcome" auto light color="warning">
 								Ver características
 							</Button>
-							<Link to="/commands" className="btn-zindex">
+							<Link to="/commands" className="link">
 								Comandos
 							</Link>
 						</div>

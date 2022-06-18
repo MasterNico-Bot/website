@@ -31,9 +31,17 @@ nav {
 				margin: 0;
 				a {
 					color: #fff;
+					transition: color 0.2s ease;
+					&:hover {
+						color: #fffb;
+					}
 					i {
 						display: none;
 						color: $main-color;
+						transition: color 0.2s ease;
+						&:hover {
+							color: #e45233;
+						}
 					}
 					span {
 						display: block;

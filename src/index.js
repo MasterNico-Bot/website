@@ -6,9 +6,11 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Navbar } from './Navbar';
 import App from './App';
 import { Command } from './pages/Command';
+import { Policy } from './pages/Policy';
 
 import './styles/navbar.css';
 import './styles/styles.css';
+import { Terms } from './pages/Terms';
 
 const theme = createTheme({
 	type: 'dark',
@@ -34,6 +36,8 @@ root.render(
 				<Routes>
 					<Route path="/" element={<App />} />
 					<Route path="/commands" element={<Command />} />
+					<Route path="/policy" element={<Policy />} />
+					<Route path="/terms" element={<Terms />} />
 				</Routes>
 			</BrowserRouter>
 		</NextUIProvider>

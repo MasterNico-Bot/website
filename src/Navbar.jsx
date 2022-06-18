@@ -21,7 +21,7 @@ export function Navbar() {
 						</Link>
 					</li>
 					<li>
-						<Link to="/policy">
+						<Link to="/terms">
 							<FontAwesome icon="fa-solid fa-shield" />
 							<span>Políticas</span>
 						</Link>

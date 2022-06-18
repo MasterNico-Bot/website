@@ -12,8 +12,8 @@ export function Footer() {
 
 			<div className="credits">
 				<p>&copy; 2022 Master Nico</p>
-				<Link to="/commands">Comandos</Link>
-				<Link to="/policy">Política</Link>
+				<Link to="/terms">Términos</Link>
+				<Link to="/policy">Política de Privacidad</Link>
 				<a href="https://github.com/MasterNico-Bot">GitHub</a>
 			</div>
 		</footer>
