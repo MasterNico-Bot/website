@@ -1,0 +1,184 @@
+::selection {
+  background: rgba(255, 255, 255, 0.3333333333) !important;
+}
+
+::-webkit-scrollbar {
+  background-color: #333;
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e45233;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ec6a4d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  font-size: 1.12em;
+}
+
+.btn-zindex {
+  font-size: 14px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App header {
+  display: flex;
+  padding: 30px;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d3436;
+  background-image: linear-gradient(190deg, #282220 0%, #000000 74%);
+}
+.App header .container {
+  justify-content: center;
+  padding: 30px;
+  align-items: center;
+  width: 100vw;
+  display: flex;
+  column-gap: 100px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.App header .container .portrait-btns {
+  display: none;
+}
+.App header .container .landscape-btns {
+  display: flex;
+  gap: 10px;
+}
+.App header .container .logo {
+  border-radius: 100%;
+  width: 200px;
+  transition: transform 1s cubic-bezier(0.8, -0.5, 0.2, 1.4);
+  margin-bottom: 10px;
+}
+.App header .container .logo:hover {
+  transform: rotate(360deg);
+}
+.App header .container h1 {
+  font-size: 3em;
+  margin-bottom: 5px;
+}
+.App header .container p {
+  color: #ccc;
+}
+.App header .container .inviteButton {
+  margin-bottom: 10px;
+}
+.App section {
+  width: 100%;
+  min-height: 60vh;
+  padding-top: 30px;
+  background: rgba(255, 255, 255, 0.0862745098);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App section:first-of-type {
+  padding-top: 20vh;
+}
+.App section:nth-of-type(odd) .container {
+  direction: rtl;
+}
+.App section:nth-of-type(odd) .container .text {
+  text-align: right;
+}
+.App section .container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+  padding: 50px;
+}
+.App section .container img,
+.App section .container .text {
+  justify-self: center;
+  align-self: center;
+}
+.App section .container .text p {
+  direction: ltr;
+}
+.App section .container img {
+  border-radius: 10px;
+  box-shadow: 0px 1px 162px -35px rgba(255, 118, 57, 0.09);
+  -webkit-box-shadow: 0px 1px 162px -35px rgba(255, 118, 57, 0.09);
+  -moz-box-shadow: 0px 1px 162px -35px rgba(255, 118, 57, 0.09);
+}
+
+footer {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+footer h2 {
+  text-align: center;
+}
+footer .credits {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  opacity: 0.7;
+  font-size: 0.8em;
+}
+footer .credits a {
+  align-self: center;
+  justify-self: center;
+}
+
+.username,
+a {
+  color: #e45233;
+}
+
+@media (max-width: 934px) {
+  .App header .container {
+    flex-direction: column;
+  }
+  .App header .container .portrait-btns {
+    display: block;
+    width: 100%;
+  }
+  .App header .container .landscape-btns {
+    display: none;
+  }
+  .App header .container .right {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .App header .container .logo {
+    width: 150px;
+  }
+  .App section:first-of-type {
+    padding-top: 0px;
+  }
+  .App section .container {
+    direction: ltr;
+    grid-template-columns: none;
+    padding: 30px;
+  }
+  .App section .container .text {
+    text-align: center !important;
+  }
+}

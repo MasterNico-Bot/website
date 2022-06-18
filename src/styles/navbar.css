@@ -1,0 +1,59 @@
+nav {
+  z-index: 999;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  height: 5em;
+  width: 100%;
+}
+nav .brand {
+  justify-self: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .brand img {
+  border-radius: 100%;
+  width: 3em;
+}
+nav .pages {
+  justify-self: end;
+  align-self: center;
+}
+nav .pages ul {
+  display: flex;
+  gap: 50px;
+}
+nav .pages ul li {
+  margin: 0;
+}
+nav .pages ul li a {
+  color: #fff;
+}
+nav .pages ul li a i {
+  display: none;
+  color: #ff7639;
+}
+nav .pages ul li a span {
+  display: block;
+}
+nav .pages ul li a i {
+  margin: 0 !important;
+  font-size: 1.2em;
+}
+
+@media (max-width: 550px) {
+  nav .pages ul {
+    gap: 40px;
+  }
+  nav .pages ul li a i {
+    display: block;
+  }
+  nav .pages ul li a span {
+    display: none;
+  }
+}
