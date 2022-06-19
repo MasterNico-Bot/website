@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c4cd02a7.css",
+    "main.js": "/static/js/main.e55f3d61.js",
+    "static/media/economia.png": "/static/media/economia.d1333bc87aa466c36235.png",
+    "static/media/tickets.png": "/static/media/tickets.32d873739205b5ec7611.png",
+    "static/media/welcome.png": "/static/media/welcome.f3122990a740d429a470.png",
+    "static/media/roles.png": "/static/media/roles.27e518797774fc34aa15.png",
+    "static/media/backup.png": "/static/media/backup.fc7a63f945b28e510bac.png",
+    "static/media/captcha.png": "/static/media/captcha.c8b4fba9273858da5471.png",
+    "static/media/starboard.png": "/static/media/starboard.80502e5de580ed79675c.png",
+    "static/media/sorteo.png": "/static/media/sorteo.d036b4d5718663631526.png",
+    "index.html": "/index.html",
+    "main.c4cd02a7.css.map": "/static/css/main.c4cd02a7.css.map",
+    "main.e55f3d61.js.map": "/static/js/main.e55f3d61.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4cd02a7.css",
+    "static/js/main.e55f3d61.js"
+  ]
+}
