@@ -2,6 +2,7 @@ import { Button } from '@nextui-org/react';
 import { FontAwesome } from './FontAwesome';
 import { Link } from 'react-router-dom';
 import { Footer } from './Footer';
+import { Helmet } from 'react-helmet';
 
 import welcome from './images/welcome.png';
 import backup from './images/backup.png';
@@ -15,6 +16,13 @@ import captcha from './images/captcha.png';
 function App() {
 	return (
 		<div className="App">
+			<Helmet>
+				<title>Master Nico</title>
+				<meta
+					name="description"
+					content="¡Un bot multi funciones con diversos sistemas para tu servidor!"
+				/>
+			</Helmet>
 			<header>
 				<div className="container">
 					<img

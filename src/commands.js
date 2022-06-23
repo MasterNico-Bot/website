@@ -153,7 +153,8 @@ const commands = [
 		commands: [
 			{
 				name: '/sorteo iniciar',
-				description: 'Configura e inicia un sorteo. Puedes configurar duración, ganadores, premio y canal.'
+				description:
+					'Configura e inicia un sorteo. Puedes configurar duración, ganadores, premio y canal.'
 			},
 			{
 				name: '/sorteo opciones',
@@ -171,7 +172,8 @@ const commands = [
 			},
 			{
 				name: '/sugerencia',
-				description: 'Enviar una sugerencia con los siguientes parametros: Tipo, Nombre, Funcionabilidad.'
+				description:
+					'Enviar una sugerencia con los siguientes parametros: Tipo, Nombre, Funcionabilidad.'
 			}
 		]
 	},
@@ -505,6 +507,28 @@ const commands = [
 			{
 				name: '/captcha-rol',
 				description: 'Configura el rol de captcha. Solo se puede un rol.'
+			}
+		]
+	},
+	{
+		name: '🟣 Twitch',
+		description: 'Envía una notificación a tus usuarios cuando transmitas en vivo.',
+		commands: [
+			{
+				name: '/twitch subscribe',
+				description: 'Suscribirse a un canal de Twitch.'
+			},
+			{
+				name: '/twitch unsubscribe',
+				description: 'Desuscribirse de un canal de Twitch.'
+			},
+			{
+				name: '/twitch set-channel',
+				description: 'Configura el canal de Twitch o desactiva el sistema.'
+			},
+			{
+				name: '/twitch set-message',
+				description: 'Configura el mensaje de Twitch.'
 			}
 		]
 	}

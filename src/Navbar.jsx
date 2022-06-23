@@ -21,9 +21,9 @@ export function Navbar() {
 						</Link>
 					</li>
 					<li>
-						<Link to="/terms">
-							<FontAwesome icon="fa-solid fa-shield" />
-							<span>Políticas</span>
+						<Link to="/partners">
+							<FontAwesome icon="fa-solid fa-handshake-simple" />
+							<span>Socios</span>
 						</Link>
 					</li>
 					<li>

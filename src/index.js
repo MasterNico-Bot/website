@@ -7,10 +7,11 @@ import { Navbar } from './Navbar';
 import App from './App';
 import { Command } from './pages/Command';
 import { Policy } from './pages/Policy';
+import { Terms } from './pages/Terms';
+import { Partners } from './pages/Partner';
 
 import './styles/navbar.css';
 import './styles/styles.css';
-import { Terms } from './pages/Terms';
 
 const theme = createTheme({
 	type: 'dark',
@@ -38,6 +39,7 @@ root.render(
 					<Route path="/commands" element={<Command />} />
 					<Route path="/policy" element={<Policy />} />
 					<Route path="/terms" element={<Terms />} />
+					<Route path="/partners" element={<Partners />} />
 				</Routes>
 			</BrowserRouter>
 		</NextUIProvider>
