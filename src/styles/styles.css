@@ -32,16 +32,24 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(31, 33, 41);
 }
 .App header {
   max-width: 100%;
   display: flex;
   padding: 30px;
+  padding-top: 5.5em;
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color: #2d3436;
-  background-image: linear-gradient(190deg, #282220 0%, #000000 74%);
+  position: relative;
+}
+.App header .scroll-down-icon {
+  position: absolute;
+  bottom: 30px;
+  color: #e45233;
+  margin: 0 !important;
+  animation: bounce 1s infinite;
 }
 .App header .container {
   justify-content: center;
@@ -83,7 +91,7 @@ p {
   width: 100%;
   min-height: 60vh;
   padding-top: 30px;
-  background: rgba(255, 255, 255, 0.0862745098);
+  background: rgba(0, 0, 0, 0.0980392157);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,6 +115,12 @@ p {
   gap: 30px;
   padding: 50px;
 }
+.App section .container h2 {
+  font-weight: 700;
+}
+.App section .container p {
+  color: rgb(189, 189, 189);
+}
 .App section .container img,
 .App section .container .text {
   justify-self: center;
@@ -114,12 +128,6 @@ p {
 }
 .App section .container .text p {
   direction: ltr;
-}
-.App section .container img {
-  border-radius: 10px;
-  box-shadow: 0px 1px 162px -35px rgba(255, 118, 57, 0.09);
-  -webkit-box-shadow: 0px 1px 162px -35px rgba(255, 118, 57, 0.09);
-  -moz-box-shadow: 0px 1px 162px -35px rgba(255, 118, 57, 0.09);
 }
 
 footer {
@@ -144,7 +152,8 @@ footer .credits {
 footer .credits p {
   margin: 0;
 }
-footer .credits a, footer .credits span {
+footer .credits a,
+footer .credits span {
   align-self: center;
   justify-self: center;
   color: #e45233 !important;
@@ -161,9 +170,28 @@ footer .credits a, footer .credits span {
   height: 100%;
 }
 
+.mn-check {
+  color: #e45233;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 @media (max-width: 934px) {
   .App header .container {
+    padding: 0;
     flex-direction: column;
+  }
+  .App header .container img {
+    display: none;
   }
   .App header .container .portrait-btns {
     display: block;
@@ -195,5 +223,10 @@ footer .credits a, footer .credits span {
   }
   footer .credits {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 360px) {
+  .App header .container .right h1 {
+    font-size: 2em;
   }
 }

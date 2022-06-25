@@ -20,7 +20,7 @@ html {
 }
 
 .Partners {
-  background-image: linear-gradient(190deg, #282220 0%, #000000 74%);
+  background-color: rgb(31, 33, 41);
   padding: 0 20px;
   padding-top: 100px;
   min-height: 100vh;

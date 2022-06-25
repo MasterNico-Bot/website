@@ -16,7 +16,7 @@ export function Command() {
 				Master Nico tiene actualmente{' '}
 				{commands.reduce((prev, curr) => prev + curr.commands.length, 0)} comandos.
 			</p>
-			<Collapse.Group className="categorias" shadow>
+			<Collapse.Group className="categorias" shadow css={{ background: 'rgb(23, 24, 30)' }}>
 				{commands.map(group => (
 					<Collapse key={group.name} title={group.name} subtitle={group.description}>
 						{group.link && (

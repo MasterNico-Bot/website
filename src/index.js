@@ -1,14 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { NextUIProvider, createTheme } from '@nextui-org/react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
-import { Navbar } from './Navbar';
-import App from './App';
-import { Command } from './pages/Command';
-import { Policy } from './pages/Policy';
-import { Terms } from './pages/Terms';
-import { Partners } from './pages/Partner';
+import { Router } from './router';
 
 import './styles/navbar.css';
 import './styles/styles.css';
@@ -32,16 +25,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<React.StrictMode>
 		<NextUIProvider theme={theme}>
-			<BrowserRouter>
-				<Navbar />
-				<Routes>
-					<Route path="/" element={<App />} />
-					<Route path="/commands" element={<Command />} />
-					<Route path="/policy" element={<Policy />} />
-					<Route path="/terms" element={<Terms />} />
-					<Route path="/partners" element={<Partners />} />
-				</Routes>
-			</BrowserRouter>
+			<Router />
 		</NextUIProvider>
 	</React.StrictMode>
 );

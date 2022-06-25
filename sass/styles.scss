@@ -34,15 +34,23 @@ p {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-color: rgb(31, 33, 41);
 	header {
 		max-width: 100%;
 		display: flex;
 		padding: 30px;
+		padding-top: 5.5em;
 		min-height: 100vh;
 		justify-content: center;
 		align-items: center;
-		background-color: #2d3436;
-		background-image: linear-gradient(190deg, #282220 0%, #000000 74%);
+		position: relative;
+		.scroll-down-icon {
+			position: absolute;
+			bottom: 30px;
+			color: $main-color;
+			margin: 0 !important;
+			animation: bounce 1s infinite;
+		}
 		.container {
 			justify-content: center;
 			padding: 30px;
@@ -87,7 +95,7 @@ p {
 		&:first-of-type {
 			padding-top: 20vh;
 		}
-		background: #ffffff16;
+		background: #00000019;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -108,6 +116,12 @@ p {
 			grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 			gap: 30px;
 			padding: 50px;
+			h2 {
+				font-weight: 700;
+			}
+			p {
+				color: rgb(189, 189, 189);
+			}
 			img,
 			.text {
 				justify-self: center;
@@ -115,12 +129,6 @@ p {
 			}
 			.text p {
 				direction: ltr;
-			}
-			img {
-				border-radius: 10px;
-				box-shadow: 0px 1px 162px -35px rgba(255, 118, 57, 0.09);
-				-webkit-box-shadow: 0px 1px 162px -35px rgba(255, 118, 57, 0.09);
-				-moz-box-shadow: 0px 1px 162px -35px rgba(255, 118, 57, 0.09);
 			}
 		}
 	}
@@ -147,7 +155,8 @@ footer {
 		p {
 			margin: 0;
 		}
-		a, span {
+		a,
+		span {
 			align-self: center;
 			justify-self: center;
 			color: $main-color !important;
@@ -166,11 +175,31 @@ footer {
 	height: 100%;
 }
 
+.mn-check {
+	color: $main-color;
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
 @media (max-width: 934px) {
 	.App {
 		header {
 			.container {
+				padding: 0;
 				flex-direction: column;
+				img {
+					display: none;
+				}
 				.portrait-btns {
 					display: block;
 					width: 100%;
@@ -208,6 +237,20 @@ footer {
 	footer {
 		.credits {
 			grid-template-columns: 1fr;
+		}
+	}
+}
+
+@media (max-width: 360px) {
+	.App {
+		header {
+			.container {
+				.right {
+					h1 {
+						font-size: 2em;
+					}
+				}
+			}
 		}
 	}
 }

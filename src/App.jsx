@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Footer } from './Footer';
 import { Helmet } from 'react-helmet';
 
-import welcome from './images/welcome.png';
+import welcome from './images/wlc.png';
 import backup from './images/backup.png';
 import roles from './images/roles.png';
 import tickets from './images/tickets.png';
@@ -32,7 +32,31 @@ function App() {
 					/>
 					<div className="right">
 						<h1>Master Nico</h1>
-						<p>¡Un bot multi funciones con diversos sistemas para tu servidor!</p>
+						<p style={{ color: '#fff9' }}>
+							¡Un bot multi funciones con diversos sistemas para tu servidor!
+						</p>
+						<ul className="features" style={{ textAlign: 'left', marginBottom: '30px' }}>
+							<li>
+								<FontAwesome className="mn-check" icon="fas fa-check" />
+								Bienvenidas
+							</li>
+							<li>
+								<FontAwesome className="mn-check" icon="fas fa-check" />
+								Copias de seguridad
+							</li>
+							<li>
+								<FontAwesome className="mn-check" icon="fas fa-check" />
+								Reaction Roles
+							</li>
+							<li>
+								<FontAwesome className="mn-check" icon="fas fa-check" />
+								Tickets
+							</li>
+							<li>
+								<FontAwesome className="mn-check" icon="fas fa-check" />
+								Sorteos
+							</li>
+						</ul>
 						<div className="landscape-btns">
 							<Button
 								href="https://discord.com/oauth2/authorize?client_id=928357222617055372&scope=bot+applications.commands&permissions=8"
@@ -42,9 +66,6 @@ function App() {
 								auto
 							>
 								<FontAwesome icon="fas fa-arrow-up-right-from-square" /> Invitar bot
-							</Button>
-							<Button as="a" href="#welcome" flat color="warning" auto>
-								Ver características
 							</Button>
 							<Button as="span" auto flat color="warning">
 								<Link className="link" to="/commands">
@@ -63,15 +84,15 @@ function App() {
 							>
 								<FontAwesome icon="fas fa-arrow-up-right-from-square" /> Invitar bot
 							</Button>
-							<Button as="a" href="#welcome" auto light color="warning">
-								Ver características
-							</Button>
 							<Link to="/commands" className="link">
 								Comandos
 							</Link>
 						</div>
 					</div>
 				</div>
+				<a href="#welcome" className="scroll-down-icon">
+					<FontAwesome icon="fas fa-angles-down" />
+				</a>
 			</header>
 			<section id="welcome">
 				<div className="container">
@@ -119,7 +140,7 @@ function App() {
 						<p>
 							Puedes personalizar tus tickets como quieras!
 							<br />
-							¡Y puedes poner hasta 25 opciones de tickets!!
+							¡Y puedes poner hasta 25 opciones de tickets!
 						</p>
 					</div>
 					<img src={tickets} alt="masternico tickets" width="450px" />

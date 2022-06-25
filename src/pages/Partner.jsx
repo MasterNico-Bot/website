@@ -25,9 +25,7 @@ export function Partners() {
 						css={{
 							p: '$6',
 							mw: '400px',
-							background: partner.background
-								? `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('${partner.background}')`
-								: undefined,
+							background: 'rgb(28, 29, 35)',
 							backgroundSize: 'cover',
 							backgroundPosition: 'center',
 							backgroundRepeat: 'no-repeat'
@@ -97,11 +95,8 @@ function PartnerReqs() {
 		<Card
 			css={{
 				p: '$6',
-				mw: '400px'
-				// background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://cdn.discordapp.com/banners/835232480931348531/a_213c013bfca3d0e7fa8ec7f58cbcdc01.gif?size=2048')`,
-				// backgroundSize: 'cover',
-				// backgroundPosition: 'center',
-				// backgroundRepeat: 'no-repeat'
+				mw: '400px',
+				background: 'rgb(28, 29, 35)'
 			}}
 			variant="bordered"
 			isPressable
