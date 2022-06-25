@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.9435ff33.css",
-    "main.js": "/static/js/main.205d88ea.js",
-    "static/media/economia.png": "/static/media/economia.d1333bc87aa466c36235.png",
-    "static/media/tickets.png": "/static/media/tickets.32d873739205b5ec7611.png",
-    "static/media/welcome.png": "/static/media/welcome.f3122990a740d429a470.png",
-    "static/media/roles.png": "/static/media/roles.27e518797774fc34aa15.png",
-    "static/media/backup.png": "/static/media/backup.fc7a63f945b28e510bac.png",
-    "static/media/captcha.png": "/static/media/captcha.c8b4fba9273858da5471.png",
-    "static/media/starboard.png": "/static/media/starboard.80502e5de580ed79675c.png",
-    "static/media/sorteo.png": "/static/media/sorteo.d036b4d5718663631526.png",
+    "main.css": "/static/css/main.8f62fcf1.css",
+    "main.js": "/static/js/main.6e370954.js",
+    "static/media/wlc.png": "/static/media/wlc.3c451df655e2f785ef8e.png",
+    "static/media/economia.png": "/static/media/economia.397392c6001892ac4ac6.png",
+    "static/media/backup.png": "/static/media/backup.b10d837be6420c86650a.png",
+    "static/media/starboard.png": "/static/media/starboard.af94e3a97163f0148387.png",
+    "static/media/sorteo.png": "/static/media/sorteo.388249ae0ff5bc2289c5.png",
+    "static/media/tickets.png": "/static/media/tickets.001763071d676410ee0b.png",
+    "static/media/captcha.png": "/static/media/captcha.509378b3f3fc17cb1491.png",
+    "static/media/roles.png": "/static/media/roles.8aead854470172f45baf.png",
     "index.html": "/index.html",
-    "main.9435ff33.css.map": "/static/css/main.9435ff33.css.map",
-    "main.205d88ea.js.map": "/static/js/main.205d88ea.js.map"
+    "main.8f62fcf1.css.map": "/static/css/main.8f62fcf1.css.map",
+    "main.6e370954.js.map": "/static/js/main.6e370954.js.map"
   },
   "entrypoints": [
-    "static/css/main.9435ff33.css",
-    "static/js/main.205d88ea.js"
+    "static/css/main.8f62fcf1.css",
+    "static/js/main.6e370954.js"
   ]
 }
