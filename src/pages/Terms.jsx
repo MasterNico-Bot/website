@@ -2,20 +2,12 @@ import '../styles/policy.css';
 import { Footer } from '../Footer';
 import { Button } from '@nextui-org/react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
 
 export function Terms() {
 	return (
 		<div className="Policy">
 			<h1>Términos y Condiciones</h1>
 			<div className="body">
-				<Helmet>
-					<title>Términos y Condiciones - Master Nico</title>
-					<meta
-						name="description"
-						content="Aquí encontrarás los términos y condiciones de Master Nico."
-					/>
-				</Helmet>
 				<h3>Introducción</h3>
 				<ul>
 					<li>

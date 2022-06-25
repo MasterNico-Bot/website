@@ -3,20 +3,12 @@ import { FontAwesome } from '../FontAwesome';
 import { partners } from '../partners';
 import { Footer } from '../Footer';
 import { useState } from 'react';
-import { Helmet } from 'react-helmet';
 
 import '../styles/partners.css';
 
 export function Partners() {
 	return (
 		<div className="Partners">
-			<Helmet>
-				<title>Socios - Master Nico</title>
-				<meta
-					name="description"
-					content="Dale un vistazo a las organizaciones que apoyan a Master Nico."
-				/>
-			</Helmet>
 			<h1>Socios</h1>
 			<p>Estas organizaciones contribuyen al desarrollo de Master Nico.</p>
 			<div className="card-container">

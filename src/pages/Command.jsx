@@ -2,15 +2,10 @@ import '../styles/commands.css';
 import { Collapse, Table } from '@nextui-org/react';
 import { commands } from '../commands';
 import { Footer } from '../Footer';
-import { Helmet } from 'react-helmet';
 
 export function Command() {
 	return (
 		<div className="Commands">
-			<Helmet>
-				<title>Comandos - Master Nico</title>
-				<meta name="description" content="Lorem ipsum dolor sit amet" />
-			</Helmet>
 			<h1>Comandos de Master Nico ⚡</h1>
 			<p>
 				Master Nico tiene actualmente{' '}

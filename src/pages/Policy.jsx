@@ -2,18 +2,10 @@ import '../styles/policy.css';
 import { Footer } from '../Footer';
 import { Button } from '@nextui-org/react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
 
 export function Policy() {
 	return (
 		<div className="Policy">
-			<Helmet>
-				<title>Política de Privacidad - Master Nico</title>
-				<meta
-					name="description"
-					content="Aquí puedes encontrar la política de privacidad de Master Nico."
-				/>
-			</Helmet>
 			<h1>Política de Privacidad de Master Nico</h1>
 			<p>
 				El equipo de Master Nico entiende lo importante que es la privacidad de sus usuarios, es
